@@ -1,0 +1,17 @@
+
+
+.number-slide1 {
+  max-width: 291px;
+  width: 291px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  height: 421px;
+  border-radius: 15px;
+  /* background: #FFF; */
+  background: rgba(255, 255, 255, 1);
+
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+}
