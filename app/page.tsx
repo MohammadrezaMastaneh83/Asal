@@ -1,27 +1,26 @@
-import Slider from "@/component/swiper_slider/slider";
-import Header from "../component/header/header";
-import Category from "@/component/Category/category";
-import BestSell from "@/component/bestsel/bestSel";
-import AsalBaner from "@/component/asalbaner/asalBaner";
-import Latest from "@/component/latest/latest";
-import Details from "@/component/details/details";
-import SpringHony from "@/component/springHony/springHony";
-import Article from "@/component/Article/Article";
-import Footer from "@/component/footer/footer";
+import Slider from "@/compponent/swiper_slider/slider";
+import Category from "@/compponent/Category/category";
+import BestSell from "@/compponent/bestsel/bestSel";
+import AsalBaner from "@/compponent/asalbaner/asalBaner";
+import Latest from "@/compponent/latest/latest";
+import Details from "@/compponent/details/details";
+import SpringHony from "@/compponent/springHony/springHony";
+import Article from "@/compponent/Article/Article";
+import Footer from "@/compponent/footer/footer";
 // import './globals.css';
 export default function Home() {
   return (
-    <div className="w-screen h-screen  " >
-      {/* <Header/> */}
+    <div className="w-screen h-screen  ">
+      
       <Slider />
       <Category />
       <BestSell />
-      <AsalBaner/>
-      <Latest/>
-      <Details/>
-      <SpringHony/>
-      <Article/>
-      <Footer/>
+      <AsalBaner />
+      <Latest />
+      <Details />
+      <SpringHony />
+      <Article />
+      <Footer />
     </div>
   );
 }

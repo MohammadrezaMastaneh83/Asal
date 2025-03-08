@@ -1,6 +1,6 @@
-import LoginSinup from "@/component/LoginandSinup/Login";
-import Otp from "@/component/LoginandSinup/otp";
-import SinUp from "@/component/LoginandSinup/sinup";
+import LoginSinup from "@/compponent/LoginandSinup/Login";
+import Otp from "@/compponent/LoginandSinup/otp";
+import SinUp from "@/compponent/LoginandSinup/sinup";
 
 export default function PageTsx(){
     return(
