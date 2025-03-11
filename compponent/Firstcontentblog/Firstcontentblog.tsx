@@ -1,15 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import honyblog1 from "@/svg/honyblog1.svg";
-import calendervector from "@/svg/Calendervector.svg";
-import seevector from "@/svg/seevector.svg";
-import honyblog2 from "@/svg/honyblog2.svg";
 import NewBlog from "../NewBlog/NewBlog";
 
 export default function Firstcontentblog() {
   return (
     <>
-      <div className="flex w-full gap-10">
+      <div className="flex w-full gap-20">
         <div className="flex justify-start text-right flex-col mt-10">
           <h3 className="text-[#535353] text-[1.5rem] font-xbold">
             ویژگی های عسل خوب و راه تشخیص آن
@@ -28,29 +24,35 @@ export default function Firstcontentblog() {
         <div className="w-1/2 mt-10">
           <div className=" rounded-[10px] w-[37rem] h-[20.68rem] bg-[#FFFFFF] shadow-md ">
             <Image
-              src={honyblog1}
+              src="/svgs/honyblog1.svg"
               alt="ویژگی های عسل خوب"
               className="w-[36.97rem] h-[17.87rem] "
+              width={591}
+              height={285}
             />
-            <div className="flex justify-start flex-row-reverse items-center gap-2 p-2">
-              <div className="flex justify-center ">
+            <div className="flex justify-start  items-center gap-2 p-2">
+              <div className="flex justify-center gap-2  ">
                 <Image
-                  src={calendervector}
+                  src="/svgs/Calendervector.svg"
                   alt="تقویم"
-                  className="w-[0.75rem] h-[0.83rem]"
-                />
-              </div>
-              <div className="flex items-center gap-2">
-                <p className="text-[0.87rem] text-[#535353] font-xregular">
-                  145202
-                </p>
-                <Image
-                  src={seevector}
-                  alt="چشم"
-                  className="w-[1.16rem] h-[1rem]"
+                  className="w-[0.75rem] h-[0.83rem] mt-1"
+                  width={12}
+                  height={13}
                 />
                 <p className="text-[0.87rem] text-[#535353] font-xregular">
                   بهمن ماه 1402
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/svgs/seevector.svg"
+                  alt="چشم"
+                  className="w-[1.16rem] h-[1rem]"
+                  width={18}
+                  height={16}
+                />
+                <p className="text-[0.87rem] text-[#535353] font-xregular">
+                  145202
                 </p>
               </div>
             </div>
@@ -108,9 +110,11 @@ export default function Firstcontentblog() {
       </div>
       <div className="flex justify-center mt-16">
         <Image
-          src={honyblog2}
+          src="/svgs/honyblog2.svg"
           alt="ویژگی های عسل خوب"
           className="w-[36.97rem] h-[17.87rem] "
+          width={591}
+          height={285}
         />
       </div>
       <div>
@@ -138,7 +142,7 @@ export default function Firstcontentblog() {
         </p>
       </div>
 
-      <NewBlog/>
+      <NewBlog />
     </>
   );
 }

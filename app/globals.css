@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #FCFCFC;
+  --background: #fcfcfc;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #FCFCFC;
-    
+    --background: #fcfcfc;
   }
 }
 
 body {
-  background: var(--background); 
+  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -28,22 +27,55 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-   
   }
   .clip-path-left {
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
   .clip-path-right {
-     clip-path: polygon(40% 0%, 100% 0%, 60% 100%, 0% 100%);
+    clip-path: polygon(40% 0%, 100% 0%, 60% 100%, 0% 100%);
   }
   .clip-path-under {
     clip-path: polygon(0% 0%, 60% 0%, 100% 100%, 40% 100%);
-    
- }
-  .fontfamily {
-    font-family: var(--Light);
-  }
-  .fontjavan{
-    font-family: var(--javan);
   }
 }
+
+@font-face {
+  font-family: "x-black";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-Black.ttf") format("truetype"),
+}
+@font-face {
+  font-family: "x-bold";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-Bold.ttf") format("truetype"),
+}
+@font-face {
+  font-family: "x-demiBold";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-DemiBold.ttf") format("truetype"),
+}
+@font-face {
+  font-family: "x-extraBold";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-ExtraBold.ttf") format("truetype"),
+}
+@font-face {
+  font-family: "x-light";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-Light.ttf") format("truetype"),
+}
+@font-face {
+  font-family: "x-regular";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-Regular.ttf") format("truetype"),
+}
+@font-face {
+  font-family: "x-medium";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-Medium.ttf") format("truetype"),
+}
+@font-face {
+  font-family: "x-thin";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-Thin.ttf") format("truetype"),
+}@font-face {
+  font-family: "x-ultraLight";
+  src: url("/fonts/IRANSansXFaNum/IRANSansXFaNum-UltraLight.ttf") format("truetype"),
+}
+
+
+
+
+

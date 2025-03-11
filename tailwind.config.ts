@@ -8,6 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily :{
+        xblack :["x-black" , "sans-serif"],
+        xbold :["x-bold" , "sans-serif"],
+        xdemiBold :["x-demiBold" , "sans-serif"],
+        xextraBold :["x-extraBold" , "sans-serif"],
+        xlight :["x-light" , "sans-serif"],
+        xregular :["x-regular" , "sans-serif"],
+        xmedium :["x-medium" , "sans-serif"],
+        xthin :["x-thin" , "sans-serif"],
+        xultraLight :["x-ultraLight" , "sans-serif"],
+  
+  
+  
+  
+        
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -20,9 +36,7 @@ const config: Config = {
         clipPathru: {
           "clip-path-under": "polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%)"
         },
-        fontfamily: {
-          'fontfamily': 'var(--Light)'
-        }
+       
       },
     },
   },

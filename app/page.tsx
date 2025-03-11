@@ -7,11 +7,12 @@ import Details from "@/compponent/details/details";
 import SpringHony from "@/compponent/springHony/springHony";
 import Article from "@/compponent/Article/Article";
 import Footer from "@/compponent/footer/footer";
+import Header from "@/compponent/header/header";
 // import './globals.css';
 export default function Home() {
   return (
     <div className="w-screen h-screen  ">
-      
+     
       <Slider />
       <Category />
       <BestSell />

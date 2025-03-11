@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import honycard1 from "@/svg/hony card1.svg";
-import honycard2 from "@/svg/honycard2.svg";
+
 
 export default function NewBlog() {
   const contentData = [
     {
       id: 1,
       title: "کپسول تل روبال",
-      image: honycard1,
+      image: "/svgs/hony card1.svg",
       description: [
         "یک قاشق چایخوری عسل طبیعی",
         "زنبور عسل حاوی حدود 5-6 گرم قند است؛",
@@ -18,7 +17,7 @@ export default function NewBlog() {
     {
       id: 2,
       title: "کپسول تل روبال",
-      image: honycard2,
+      image:"/svgs/honycard2.svg",
       description: [
         "یک قاشق چایخوری عسل طبیعی",
         "زنبور عسل حاوی حدود 5-6 گرم قند است؛",
@@ -29,26 +28,26 @@ export default function NewBlog() {
 
   return (
     <>
-      <div className="text-right mt-20">
-        <h3 className="text-[1.5rem] text-[#2C2C2C] font-xbold">
-          جدید ترین مقالات
-        </h3>
+      <div className="text-right mt-20 relative">
+        <div className="relative inline-block">
+          <h3 className="text-[1.5rem] text-[#2C2C2C] font-xbold relative z-10">
+            جدید ترین مقالات
+          </h3>
+          <div className="w-[14.62rem] h-[1.31rem] bg-[#FFD9A1] clip-path-left absolute bottom-2 z-0 "></div>
+        </div>
       </div>
 
- 
-      <div className="flex gap-4">
+      <div className="flex gap-20 mt-10">
         {contentData.map((item, index) => (
           <div
             key={index}
             className="text-right space-y-8 w-[37.71rem] h-[20rem] bg-[#FFFFFF] shadow-lg rounded-[20px] p-4 mt-10"
           >
-           
             <h1 className="text-[1.5rem]  text-[#2C2C2C] font-xbold">
               {item.title}
             </h1>
 
-            <div className="flex  items-start gap-4">
-          
+            <div className="flex  items-start gap-4 flex-row-reverse">
               <div className=" -mt-10">
                 <Image
                   src={item.image}

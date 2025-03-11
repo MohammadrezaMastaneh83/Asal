@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import azmayeshpic from "@/svg/azmayeshpic.svg";
+
 
 export default function Azmayesh() {
   return (
@@ -9,23 +9,31 @@ export default function Azmayesh() {
         <div className="flex justify-center gap-5   ">
           <Image
             className="w-[280px] h-[370px]"
-            src={azmayeshpic}
+            src="svgs/azmayeshpic.svg"
             alt="honey"
+            width={280}
+            height={370}
           />
           <Image
             className="w-[280px] h-[370px]"
-            src={azmayeshpic}
+            src="svgs/azmayeshpic.svg"
             alt="honey"
+            width={280}
+            height={370}
           />
           <Image
             className="w-[280px] h-[370px]"
-            src={azmayeshpic}
+            src="svgs/azmayeshpic.svg"
             alt="honey"
+            width={280}
+            height={370}
           />
           <Image
             className="w-[280px] h-[370px]"
-            src={azmayeshpic}
+            src="svgs/azmayeshpic.svg"
             alt="honey"
+            width={280}
+            height={370}
           />
         </div>
       </div>

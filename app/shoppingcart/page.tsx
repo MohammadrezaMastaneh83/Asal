@@ -11,7 +11,7 @@ export default function ShoppingCart() {
   const card = [
     {
       id: 1,
-      img: hony,
+      img: "/svgs/hony.png",
       name: "عسل طبیعی گون",
       p: "وزن",
       weight: "500 گرمی",
@@ -21,7 +21,7 @@ export default function ShoppingCart() {
     },
     {
       id: 2,
-      img: hony,
+      img: "/svgs/hony.png",
       name: "عسل طبیعی رازیانه",
       p: "وزن",
       weight: "500 گرمی",
@@ -46,24 +46,24 @@ export default function ShoppingCart() {
 
   return (
     <>
-      <div className="flex  w-full flex-row-reverse ">
-        <div className="flex flex-col items-end space-y-4">
+      <div className="flex  w-full   gap-40 mt-10 ">
+        <div className="flex flex-col items-end  space-y-4">
           {card
             .filter((item) => counts[item.id] !== undefined)
             .map((item) => (
               <div
                 key={item.id}
-                className="w-[50.43rem] h-[10.87rem] bg-white rounded-[20px] flex items-center justify-between px-5 shadow-md border"
+                className="w-[50.43rem] h-[10.87rem] bg-white rounded-[20px] flex items-center justify-between px-5 shadow-md border flex-row-reverse"
               >
                 <Counter
                   count={counts[item.id]}
                   setCount={(newCount) => updateCount(item.id, newCount)}
-                  removeCard={() => removeCard(item.id)} // تابع حذف
+                  removeCard={() => removeCard(item.id)}
                 />
 
                 <div className="flex flex-col items-center">
                   {item.discount && item.pricebefore && (
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center flex-row-reverse space-x-2 gap-2">
                       <span className="bg-[#FFA51F] text-black text-[1.12rem] font-xregular px-2 py-1 rounded-[20px]">
                         {item.discount}
                       </span>
@@ -89,12 +89,12 @@ export default function ShoppingCart() {
                     </p>
                   </div>
                   <div className="flex items-center mt-5">
+                    <span className="text-[1.25rem] font-xregular ml-2 text-[#2c2c2c]">
+                      {item.p}{" "}
+                    </span>
                     <select className="border px-2 py-1 rounded-md text-[16px] text-[#2c2c2c] font-xregular">
                       <option>{item.weight}</option>
                     </select>
-                    <span className="text-[1.25rem] font-xregular ml-2 text-[#2c2c2c]">
-                      :{item.p}{" "}
-                    </span>
                   </div>
                 </div>
 
