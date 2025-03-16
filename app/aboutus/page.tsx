@@ -1,4 +1,4 @@
-import Aboutus from "@/component/aboutus/aboutus";
+import Aboutus from "@/compponent/aboutus/aboutus";
 
 export default function page(){
     return(

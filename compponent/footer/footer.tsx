@@ -2,6 +2,9 @@ import Image from "next/image";
 
 export default function Footer(){
     return(
+  
+      
+
         <div className="w-screen h-[381px] bg-[url('/footer_back.png')] mt-[80px] flex justify-around items-center ">
           <div className=" w-[300px] h-[245px] flex flex-col gap-[24px]">
            <Image alt="" src="/footersvg.svg" width={160} height={85} />
@@ -49,5 +52,7 @@ export default function Footer(){
             </div>
           </div>
         </div>
+      
+
     )
 }
