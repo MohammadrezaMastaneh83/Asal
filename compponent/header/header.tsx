@@ -32,7 +32,7 @@ export default function Header() {
             </p>
             <img src="/arrow-down.svg" alt="" className="w-[28px]" />
           </div>
-          <div className="w-[211px] flex items-center bg-[red] justify-around">
+          <div className="w-[211px] flex items-center  justify-around">
             <p className="fontfamily text-base font-medium text-[#2C2C2C]">
               خانه
             </p>
