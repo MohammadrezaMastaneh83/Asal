@@ -58,7 +58,7 @@ export default function ShoppingCart() {
                 <Counter
                   count={counts[item.id]}
                   setCount={(newCount) => updateCount(item.id, newCount)}
-                  removeCard={() => removeCard(item.id)} // تابع حذف
+                  removeCard={() => removeCard(item.id)} 
                 />
 
                 <div className="flex flex-col items-center">
